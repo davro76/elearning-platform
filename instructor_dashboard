@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructor Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Instructor Dashboard</h1>
+        <nav>
+            <a href="instructor_dashboard.html">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#upload">Upload Notes</a>
+            <a href="#exams">Create Exam</a>
+            <a href="#assignments">Assignments</a>
+            <a href="#results">Results</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <div class="container" id="courses">
+        <h2>My Courses</h2>
+        <div class="card">
+            <h3>Introduction to Programming</h3>
+            <p>Manage materials and assessments for this course.</p>
+            <button class="btn" onclick="alert('Upload notes not implemented yet.')">Upload Notes</button>
+            <button class="btn" onclick="alert('Create exam not implemented yet.')" style="margin-left:0.5rem;">Create Exam</button>
+            <button class="btn" onclick="alert('Add assignment not implemented yet.')" style="margin-left:0.5rem;">Add Assignment</button>
+        </div>
+        <div class="card">
+            <h3>Data Structures</h3>
+            <p>Manage materials and assessments for this course.</p>
+            <button class="btn" onclick="alert('Upload notes not implemented yet.')">Upload Notes</button>
+            <button class="btn" onclick="alert('Create exam not implemented yet.')" style="margin-left:0.5rem;">Create Exam</button>
+            <button class="btn" onclick="alert('Add assignment not implemented yet.')" style="margin-left:0.5rem;">Add Assignment</button>
+        </div>
+    </div>
+
+    <div class="container" id="upload">
+        <h2>Upload Notes</h2>
+        <form onsubmit="alert('Upload functionality not implemented yet.'); return false;">
+            <div class="form-group">
+                <label for="course">Course</label>
+                <select id="course" name="course">
+                    <option value="intro">Introduction to Programming</option>
+                    <option value="data">Data Structures</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="file">Select File</label>
+                <input type="file" id="file" name="file">
+            </div>
+            <button type="submit" class="btn">Upload</button>
+        </form>
+    </div>
+
+    <div class="container" id="exams">
+        <h2>Create Exam</h2>
+        <form onsubmit="alert('Exam creation not implemented yet.'); return false;">
+            <div class="form-group">
+                <label for="exam-course">Course</label>
+                <select id="exam-course" name="exam-course">
+                    <option value="intro">Introduction to Programming</option>
+                    <option value="data">Data Structures</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exam-title">Exam Title</label>
+                <input type="text" id="exam-title" name="exam-title" required>
+            </div>
+            <div class="form-group">
+                <label for="exam-date">Exam Date</label>
+                <input type="date" id="exam-date" name="exam-date" required>
+            </div>
+            <button type="submit" class="btn">Create Exam</button>
+        </form>
+    </div>
+
+    <div class="container" id="assignments">
+        <h2>Assignments</h2>
+        <div class="card">
+            <h3>Programming Assignment 1</h3>
+            <p>Due: 2025‑08‑15</p>
+            <button class="btn" onclick="alert('View submissions not implemented yet.')">View Submissions</button>
+        </div>
+        <div class="card">
+            <h3>Data Structures Assignment 1</h3>
+            <p>Due: 2025‑08‑20</p>
+            <button class="btn" onclick="alert('View submissions not implemented yet.')">View Submissions</button>
+        </div>
+    </div>
+
+    <div class="container" id="results">
+        <h2>Exam & Assignment Results</h2>
+        <div class="card">
+            <h3>Programming Quiz 1</h3>
+            <p>Average Score: 80%</p>
+            <button class="btn" onclick="alert('Detailed results not implemented yet.')">View Details</button>
+        </div>
+        <div class="card">
+            <h3>Data Structures Assignment 1</h3>
+            <p>Average Score: 90%</p>
+            <button class="btn" onclick="alert('Detailed results not implemented yet.')">View Details</button>
+        </div>
+    </div>
+</body>
+</html>
